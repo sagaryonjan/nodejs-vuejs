@@ -12,9 +12,7 @@ submitting.
 - [Vue](https://vuejs.org/)
 
 ## External Services Used
-For this test, your cloud function should connect to an external api or webpage.
-We suggest https://www.ipify.org/, though you can choose an alternative if you
-prefer. There are no other external services involved in this project.
+https://www.ipify.org/
 
 ## Setup
 
