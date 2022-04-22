@@ -19,7 +19,7 @@ https://www.ipify.org/
 ### Requirements
 
 You must have [Docker](https://www.docker.com/) installed in order to run
-`docker compose` commands.
+`docker-compose` commands.
 
 If you wish to run `npm ci` to get local copies of the `node_modules` for your
 editor to scan, you must install Node.js 16 (LTS) from https://nodejs.org/en/ or
@@ -33,8 +33,8 @@ https://github.com/nvm-sh/nvm or https://github.com/tj/n.
 In order to get a functioning environment, you must run:
 
 ```sh
-docker compose build
-docker compose up
+docker-compose build
+docker-compose up
 ```
 
 Once it finishes, you can visit http://localhost:8081 to see the function output
@@ -69,14 +69,14 @@ so you may `npm install --save` them as usual, but you must rebuild and restart
 the docker containers by running the following again afterwards:
 
 ```sh
-docker compose build
-docker compose up
+docker-compose build
+docker-compose up
 ```
 
 It may be better to add them from within the container via:
 
 ```sh
-docker compose exec {frontend or backend} sh
+docker-compose exec {frontend or backend} sh
 npm install --save {package}
 ```
 
